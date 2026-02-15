@@ -1,4 +1,5 @@
 #pragma once
+#include <stdint.h>
 #include "audio_midi.h"
 #include "audio_bitstream.h"
 
