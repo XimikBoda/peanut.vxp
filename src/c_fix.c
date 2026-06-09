@@ -22,8 +22,6 @@ void _read(){}
 void _exit(int status) {
 	LOG_M("Exit");
 	vm_exit_app();
-	asm("ldr SP, %0" : "=m" (return_sp));
-	asm("ldr PC, %0" : "=m" (return_address));
 }
 void _getpid(){}
 void _kill(){}

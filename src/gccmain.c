@@ -1,3 +1,4 @@
+#ifndef WIN32
 #include <stdio.h>
 #include "vmsys.h"
 #include "vmchset.h"
@@ -77,3 +78,4 @@ void gcc_entry(unsigned int entry, unsigned int init_array_start, unsigned int c
 	}
 	vm_main();
 }
+#endif
