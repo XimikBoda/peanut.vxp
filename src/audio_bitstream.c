@@ -27,8 +27,8 @@ void audio_bitstream_init(){
     // Init apu
     audio_apu_init();
 
-    memset(audio_buf, 0, 4096);
-    bitstream_put_data(audio_buf, 4096, 0);
+    memset(audio_buf, 0, AUDIO_BUF_SIZE);
+    bitstream_put_data(audio_buf, AUDIO_BUF_SIZE, 0);
 
     bitstream_start(0, 0, config->audio_volume);
 }
